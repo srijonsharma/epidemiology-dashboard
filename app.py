@@ -19,7 +19,7 @@ st.markdown("""
         background-color: #f8f9fa;
     }
     .stMetric {
-        background-color: #ffffff;
+        background-color: #000000;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -66,7 +66,7 @@ def main():
     if uploaded_file is not None:
         df = load_data(uploaded_file)
     else:
-        st.sidebar.info("Using sample data. Upload a CSV to visualize your own data.")
+        st.sidebar.info("Currently using sample data. Upload a CSV to visualize your own data.")
         df = load_data("sample_data.csv")
 
     if df is not None:
